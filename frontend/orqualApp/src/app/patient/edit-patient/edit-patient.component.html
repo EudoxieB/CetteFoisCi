@@ -1,0 +1,60 @@
+<h1 mat-dialog-title>Patient Informations</h1>
+
+<div mat-dialog-content>
+    <form [formGroup]="editPatientForm">
+
+        <mat-form-field appearance="legacy">
+            <mat-label>ID</mat-label>
+            <input [disabled]="true" formControlName="id" matInput >
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+            <mat-label>Surname</mat-label>
+            <input formControlName="surname" matInput placeholder="Surname">
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+            <mat-label>Name</mat-label>
+            <input formControlName="name" matInput placeholder="Name">
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+            <mat-label>Date of birth</mat-label>
+            <input formControlName="birth_date" matInput [matDatepicker]="picker">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+            <mat-label>Next appointment</mat-label>
+            <input formControlName="next_appointment" matInput [matDatepicker]="picker1">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+            <mat-label>Created at</mat-label>
+            <input formControlName="created_at" matInput [matDatepicker]="picker2">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+            <mat-datepicker #picker2></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field appearance="legacy">
+            <mat-label>Practician</mat-label>
+            <select matNativeControl>
+                <option selected></option>
+                <option value="volvo">None</option>
+                <option *ngFor="let p of p">{{p.name}}</option>
+            </select>
+        </mat-form-field>
+
+
+    </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>ANNULER</button>
+    <button mat-raised-button color="primary" mat-dialog-close (click)="updatePatient()">VALIDER</button>
+</div>

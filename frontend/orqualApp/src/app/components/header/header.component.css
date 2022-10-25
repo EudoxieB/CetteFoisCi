@@ -1,0 +1,21 @@
+.logo {
+  width: 100px;
+  height: 40px;
+  margin-left: 25px;
+}
+
+.stickyBar {
+  position: sticky;
+  top: 0;
+}
+
+
+.screens {
+  margin: 0 auto;
+
+}
+
+.my-name {
+  font-weight: bolder;
+
+}

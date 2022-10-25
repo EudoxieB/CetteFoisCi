@@ -1,0 +1,70 @@
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  margin-top: 70px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+}
+
+.orqual-text {
+  margin: 10px;
+  padding-top: 60px;
+  font-size: 60px;
+  font-weight: 700;
+  font-family: 'Lora', Georgia, "Times New Roman", serif;
+}
+
+.orqual-text-description {
+  padding-top: 50px;
+  font-size: 16px;
+  font-family: 'Lora', Georgia, "Times New Roman", serif;
+}
+
+.text-societe {
+  padding-top: 0px;
+  font-size: 22px;
+  font-family: 'Lora', Georgia, "Times New Roman", serif;
+  font-weight: bolder;
+}
+
+p {
+  padding-top: 0px;
+  font-size: 16px;
+  font-family: 'Lora', Georgia, "Times New Roman", serif;
+}
+
+li {
+  list-style: none;
+}
+
+.split-paragraph {
+  margin: 60px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.text-description {
+  padding-top: 30px;
+  font-size: 16px;
+  font-family: 'Lora', Georgia, "Times New Roman", serif;
+}
+
+.title-paragraph {
+  font-weight: bolder;
+  font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+
+}
